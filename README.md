@@ -13,3 +13,28 @@ Os adjunto la demo para que veaís fácilmente como funciona la app. No inspecci
 6. Pensad además, como "crear" las 3 posibles elecciones de la máquina. Podéis crear 3 bloques HTML adicionales que contengan las posibles elecciones de la máquina, y solo msotrar el que elige ella. O bien, podeis [crear en tiempo de ejecución un nodo HTML](https://lenguajejs.com/javascript/dom/crear-elementos-dom/) con lo que ha elegido la máquina. 
 
 ## Pregunta 1: Describe con lenguaje natural que tiene que hacer la app.
+
+1. Create a variable for each button, might be an array including the 3
+
+
+2. Computer "random decision" bewteen 3 options: A function!
+
+
+3. Loop to link the player decision with the random computer decision. If the "player decision is..." then computer = "random decision".
+
+
+4. Arrange the decisions between player wins, losses and draws: 
+    Wins:
+        If player decision === "scissors" && random decision === "paper"
+        If player decision === "paper" && random decision === "rock"
+        If player decision === "rock" && random decision === "scissors"
+
+    Losses:
+        If player decision === "scissors" && random decision === "rock"
+        If player decision === "paper" && random decision === "scissors"
+        If player decision === "rock" && random decision === "paper"
+
+    Draws:
+        If player decision === "scissors" && random decision === "scissors"
+        If player decision === "paper" && random decision === "paper"
+        If player decision === "rock" && random decision === "rock"    
